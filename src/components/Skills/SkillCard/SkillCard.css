@@ -1,0 +1,16 @@
+.skills-card{
+
+    backdrop-filter: blur(1rem);
+    transition: all 0.3s ease;
+}
+
+.skills-card:hover, .skills-card.active{
+    background: linear-gradient(to right, #485563, #29323c);
+}
+
+.skill-icon2{
+    background: #29323c;
+    border: 1.5px solid #485563;
+    top: -1rem;
+    left:-1rem
+}

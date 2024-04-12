@@ -19,7 +19,7 @@ const Home = () => {
   }, [])
   return (
     
-    <div className="hero h-full flex-row-reverse md:flex justify-center items-center overflow-hidden relative before:absolute before:content-[''] before:h-40 before:w-40 md:before:w-96 md:before:h-96 before:rounded-full">
+    <div className="hero h-full w-full flex-row-reverse md:flex justify-center items-center overflow-hidden relative before:absolute before:content-[''] before:h-40 before:w-40 md:before:w-96 md:before:h-96 before:rounded-full">
       <div className="w-full cols1 flex justify-center items-center">
         <div className="home__img">
           <img class="h-full" src={selfPic}/>
