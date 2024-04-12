@@ -1,0 +1,69 @@
+.hero{
+    width: 98vw;
+    overflow-x: hidden;
+}
+.hero::before{
+    background: linear-gradient(to right, #434343 0%, rgb(179, 178, 178) 100%);    
+    animation: object1 6s linear infinite;
+    top:60%;
+    left: -12%;
+}
+.hero::after{
+    position:absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 35%;
+    top: 5%;
+    background: linear-gradient(to right, #434343 0%, gray 100%);    
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 60%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 7%;
+    }
+}
+
+@keyframes object1-sm {
+    50% {
+        left: -13%;
+        top: 60%;
+    }
+}
+
+@keyframes object2-sm {
+    50% {
+        left: 35%;
+        top: 7%;
+    }
+}
+.imageContainer{
+    height: 100%;
+    /* position: absolute; */
+    right: 0;
+}
+
+/* .imageContainer svg{
+    position:absolute;
+    height:100%;
+} */
+.home__blob{
+    width: 440px;
+    /* top: -100px;
+    right: 50px; */
+    
+    /* fill: var(--first-color); */
+}
+
+.home__blob-img{
+    width: 170px;
+    transform: translate(20,2.5);
+}

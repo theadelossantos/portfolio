@@ -1,0 +1,9 @@
+/* navbar.css */
+#navbar-links {
+    display: none;
+  }
+  
+  #navbar-toggle:checked + #navbar-links {
+    display: flex;
+  }
+  
