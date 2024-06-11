@@ -1,5 +1,4 @@
 .skills-info-card{
-    min-height:23rem;
     border: 1.5px solid #485563;
     /* background: linear-gradient(to right, #485563, #29323c); */
     backdrop-filter: blur(1rem);

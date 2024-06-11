@@ -23,19 +23,19 @@ const Navbar = () => {
               </svg>
           </button>
         </div>
-        <div className="flex flex-wrap items-center justify-center w-full">
+        <div className="flex flex-wrap items-center justify-end w-full mr-14">
           <div className={`items-center justify-between w-full p-4 md:flex md:w-auto md:order-1 ${isNavbarOpen ? 'block':'hidden'}`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-900 dark:border-gray-700">
-              <li className="mb-2">
+              <li>
                 <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-70} duration={300} onClick={toggleNavbar} className="menu-item" aria-current="page">Home</Link>
               </li>
-              <li className="mb-2">
-                <Link activeClass="active" to="Skills" spy={true} smooth={true} offset={-70} duration={300} onClick={toggleNavbar} className="menu-item">Skills</Link>
+              <li>
+                <Link activeClass="active" to="Skills" spy={true} smooth={true} offset={-70} duration={300} onClick={toggleNavbar} className="menu-item">About</Link>
               </li>
-              <li className="mb-2">
+              <li>
                 <Link activeClass="active" to="Portfolio" spy={true} smooth={true} offset={-70} duration={300} onClick={toggleNavbar} className="menu-item">Portfolio</Link>
               </li>
-              <li className="mb-2">
+              <li>
                 <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={300} onClick={toggleNavbar} className="menu-item">Contact</Link>
               </li>
             </ul>
