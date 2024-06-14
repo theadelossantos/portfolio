@@ -8,7 +8,7 @@ const App = () => {
     <section id="Home" >
       <Hero></Hero>
     </section>
-    <section id="Skills" className="md:mr-14">
+    <section id="Skills" className="">
       <Skills></Skills>
     </section>
     <section id="Portfolio">hello2</section>
