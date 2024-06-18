@@ -6,10 +6,10 @@ import SkillsInfo from './SkillsInfo/SkillsInfo';
 import { animate, motion } from 'framer-motion';
 import PF from "../../assets/skills.png";
 import bgImage from "../../assets/cubebg.png";
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaPython, FaAngular, FaBootstrap, FaGitAlt } from 'react-icons/fa';
-import { SiPreact, SiTailwindcss, SiDjango, SiMysql, SiPostgresql, SiPython, SiPhp } from 'react-icons/si';
-import { RiJavascriptFill } from "react-icons/ri";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { VscVerifiedFilled } from "react-icons/vsc";
+import { FaStar, FaStarHalfStroke } from "react-icons/fa6";
+import { FaRegStar } from "react-icons/fa";
+
 
 const variants = {
   initial:{
@@ -58,50 +58,240 @@ const Skills = () => {
     setSelectedSkill(data);
   }
   return (
-    <motion.div className='h-full flex flex-col items-center'>
-      {/* <motion.h2 className="text-center text-3xl font-bold mt-4" variants={textvariants} initial="initial" animate="animate">ABOUT ME</motion.h2> */}
-      <div className='mt-6'>
-        <h1>SKILLS</h1>
+    <motion.div className='h-screen flex flex-col items-center'>
+      <div className='mt-6 mb-12'>
+        <p className='text-4xl font-bold'>SKILLS</p>
       </div>
-        <div className='container mx-auto relative h-3/4 mt-20'>
-            <div className="relative">
-              <div className='flex items-center justify-center'>
-                <img src={PF} alt="" className='w-6/12 h-6/12 relative'/>
+      <div className='flex flex-col md:flex-row w-full h-screen'>
+        <div className='md:w-2/4 flex justify-center md:justify-end h-full md:mr-4 mb-4 md:mb-0'>
+            <div className='outline outline-1 flex flex-col w-9/12 h-9/12 2xl:w-1/2 2xl:h-1/2 md:w-3/4 md:h-1/2 rounded-md py-8 pr-10 pl-10'>
+              <p className='text-center text-sm md:text-sm lg:text-sm xl:text-lg 2xl:text-lg font-semibold'>Frontend Development</p>
+              <div className='flex mt-1 w-full gap-1 sm:gap-4 lg:gap-4 2xl:gap-28 '>
+                <div className='flex flex-col w-full mt-4 justify-center'>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>HTML</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>CSS</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Bootstrap</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Tailwind</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                </div>
+                <div className='flex flex-col w-full mt-4 justify-center'>
+                  <div className='flex flex-col mb-4'>
+                      <div className='flex items-center'>
+                        <span className='font-medium'>jQuery</span>
+                      </div>
+                      <div className='flex'>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStarHalfStroke />                      
+                        <FaRegStar />
+                      </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Javascript</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Angular</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>ReactJS</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <FaReact className="absolute top-0 left-1/2 transform -translate-y-24 text-blue-500 text-4xl md:text-8xl" />
-              <RiJavascriptFill className="absolute top-12 right-0 transform -translate-x-1/2 text-yellow-500 text-4xl text-yellow-300" />
-              <SiPython  className="absolute top-24 right-8 transform -translate-x-1/2 text-blue-300 text-4xl text-blue-500" />
-              <SiPhp className="absolute top-36 right-8 transform -translate-x-1/2 text-indigo-700 text-4xl text-indigo-600" />
-              <SiTailwindcss className="absolute top-48 right-4 transform -translate-x-1/2 text-teal-400 text-4xl" />
-              <FaGitAlt className="absolute bottom-12 right-4 transform -translate-x-1/2 text-red-500 text-4xl" />
-              <SiDjango className="absolute bottom-8 right-20 transform -translate-x-1/2 text-green-700 text-4xl" />
-              <BiLogoPostgresql  className="absolute bottom-8 left-20 transform -translate-x-1/2 text-blue-700 text-4xl" />
-              <FaBootstrap className="absolute bottom-12 left-4 transform -translate-x-1/2 text-purple-500 text-4xl" />
-              <SiMysql className="absolute top-48 left-4 transform -translate-x-1/2 text-orange-500 text-4xl" />
-              <FaHtml5 className="absolute top-36 left-8 transform -translate-x-1/2 text-orange-600 text-4xl" />
-              <FaCss3Alt className="absolute top-24 left-8 transform -translate-x-1/2 text-blue-600 text-4xl" />
-              <FaAngular className="absolute top-12 left-0 transform -translate-x-1/2 text-red-600 text-4xl" /> 
+              
             </div>
-          </div>
-        
-          
-           
+        </div>
+        <div className='md:w-2/4 flex justify-center md:justify-start h-full md:ml-4 mb-4 md:mb-0'>
+        <div className='outline outline-1 flex flex-col w-9/12 h-9/12 2xl:w-1/2 2xl:h-1/2 md:w-3/4 md:h-1/2 rounded-md py-8 pr-10 pl-10'>
+              <p className='text-center text-lg font-semibold'>Backend Development</p>
+              <div className='flex mt-1 w-full md:gap-28'>
+                <div className='flex flex-col w-full mt-4 justify-center'>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>PHP</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
 
-          {/* <div className=' w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Python</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
 
-          </div>  */}
-          {/* <motion.div className="skills-content items-start gap-4 mt-4 flex" variants={variants}>
-             <motion.div className="skills flex flex-col gap-4">
-                 {SKILLS.map((item)=>(
-                     <SkillCard key={item.title} iconUrl={item.icon} title={item.title} isActive={selectedSkill.title == item.title} 
-                     onClick={()=> {handleSelectSkill(item)}}/>
-                 ))}
-             </motion.div>
-             <motion.div className="skills-info flex-1" variants={variants}>
-                 <SkillsInfo heading={selectedSkill.title} skills={selectedSkill.skills}></SkillsInfo>
-             </motion.div>
-         </motion.div> */}
-        
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Django</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Node.js</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                </div>
+                <div className='flex flex-col w-full mt-4 justify-center'>
+                  <div className='flex flex-col mb-4'>
+                      <div className='flex items-center'>
+                        <span className='font-medium'>SQL</span>
+                      </div>
+                      <div className='flex'>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStarHalfStroke />                      
+                      </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Java</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>C++</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+
+                    </div>
+                  </div>
+                  <div className='flex flex-col mb-4'>
+                    <div className='flex items-center'>
+                      <span className='font-medium'>Typescript</span>
+                    </div>
+                    <div className='flex'>
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStarHalfStroke />
+                      <FaRegStar />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
     </motion.div>
     
   )
