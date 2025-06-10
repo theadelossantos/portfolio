@@ -2,6 +2,7 @@ import "./App.css"
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
+import Portfolio from "./components/Portfolio/Portfolio";
 const App = () => {
   return <div>
     <Navbar/>
@@ -11,8 +12,8 @@ const App = () => {
     <section id="Skills" className="">
       <Skills></Skills>
     </section>
-    <section id="Portfolio">hello2</section>
-    <section id="Contact">hello3</section>
+    <Portfolio/>
+    {/* <section id="Contact">hello3</section> */}
 
   </div>
 }

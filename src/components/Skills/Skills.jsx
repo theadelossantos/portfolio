@@ -5,7 +5,7 @@ import SkillCard from './SkillCard/SkillCard'
 import SkillsInfo from './SkillsInfo/SkillsInfo';
 import { animate, motion } from 'framer-motion';
 import PF from "../../assets/skills.png";
-import bgImage from "../../assets/cubebg.png";
+import bgImage from "../../assets/skills-bg.png";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { FaStar, FaStarHalfStroke } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa";
@@ -178,7 +178,7 @@ const Skills = () => {
             </div>
         </div>
         <div className='md:w-2/4 flex justify-center md:justify-start h-full md:ml-4 mb-4 md:mb-0'>
-        <div className='outline outline-1 flex flex-col w-9/12 h-9/12 2xl:w-1/2 2xl:h-1/2 md:w-3/4 md:h-1/2 rounded-md py-8 pr-10 pl-10'>
+          <div className='outline outline-1 flex flex-col w-9/12 h-9/12 2xl:w-1/2 2xl:h-1/2 md:w-3/4 md:h-1/2 rounded-md py-8 pr-10 pl-10'>
               <p className='text-center text-lg font-semibold'>Backend Development</p>
               <div className='flex mt-1 w-full md:gap-28'>
                 <div className='flex flex-col w-full mt-4 justify-center'>
@@ -289,8 +289,9 @@ const Skills = () => {
                 </div>
               </div>
               
-            </div>
+          </div>
         </div>
+        
       </div>
     </motion.div>
     
